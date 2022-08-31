@@ -9,11 +9,3 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-#root {
-    margin: 200px;
-    padding: 20px;
-    background: hsl(217, 19%, 24%);
-    border-radius: 10px;
-    color: #fff;
-}
