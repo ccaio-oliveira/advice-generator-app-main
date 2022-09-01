@@ -1,11 +1,13 @@
 import React, { useState } from "react";
+import Title from "../../components/title";
+import Advice from "../../components/advice";
+import Buttons from "../../components/buttons";
+
 import './style.css';
 
 const Main = () => {
-    const [adv, setAdv] = useState('oioi');
+    const [adv, setAdv] = useState('Click on button to see a advice!');
     const [id, setId] = useState(0);
-
-    console.log('render...');
     
     const loadAdvices = async () => {
         const advicesResponse = await fetch('https://api.adviceslip.com/advice').then();
@@ -18,8 +20,9 @@ const Main = () => {
 
     return(
         <div id="card">
-            <p>#{id !== 0 && (id)}{adv}</p>
-            <button onClick={() => loadAdvices()}>mude o conselho</button>
+            <Title id={id} />
+            <Advice advice={adv} />
+            <Buttons changeAdvice={loadAdvices} />
         </div>
     )
 }

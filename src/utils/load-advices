@@ -1,8 +1,0 @@
-const loadAdvices = async () => {
-    const advicesResponse = await fetch('https://api.adviceslip.com/advice');
-    const advicesJson = await advicesResponse.json();
-    
-    return advicesJson;
-}
-
-export default loadAdvices();

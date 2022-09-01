@@ -1,0 +1,29 @@
+button {
+    background: none;
+    border: 0px;
+}
+
+#btn {
+    display: flex;
+    flex-direction: column;
+}
+
+#stopBtn {
+    cursor: pointer;
+}
+
+#startBtn {
+    background: hsl(150, 100%, 66%);
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    margin: 0px auto;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+}
+
+#startBtn:hover{
+    box-shadow: 1px 1px 30px 10px rgba(82, 255, 168, 0.5);
+}
