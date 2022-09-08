@@ -10,3 +10,9 @@ body {
     align-items: center;
     font-family: 'Manrope', sans-serif;
 }
+
+@media(max-width: 711px){
+    #card {
+        width: 90%;
+    }
+}

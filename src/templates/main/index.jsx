@@ -6,7 +6,7 @@ import Buttons from "../../components/buttons";
 import './style.css';
 
 const Main = () => {
-    const [adv, setAdv] = useState('Click on button to see a advice!');
+    const [adv, setAdv] = useState('Click on button to see an advice!');
     const [id, setId] = useState(0);
     
     const loadAdvices = async () => {
@@ -22,7 +22,7 @@ const Main = () => {
         <div id="card">
             <Title id={id} />
             <Advice advice={adv} />
-            <Buttons changeAdvice={loadAdvices} />
+            <Buttons changeAdvice={loadAdvices}/>
         </div>
     )
 }

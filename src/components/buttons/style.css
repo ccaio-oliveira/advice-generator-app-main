@@ -10,6 +10,7 @@ button {
 
 #stopBtn {
     cursor: pointer;
+    width: 100%;
 }
 
 #startBtn {
